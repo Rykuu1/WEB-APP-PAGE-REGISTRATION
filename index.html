@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<form>
+  <h2>Registration Form</h2>
+  <p>Please fill out this form with the required information</p>
+
+  <label>First Name:</label>
+  <input type="text" name="firstName">
+
+  <label>Last Name:</label>
+  <input type="text" name="lastName">
+
+  <label>Email:</label>
+  <input type="email" name="email">
+
+  <label>Create Password:</label>
+  <input type="password" name="password">
+
+  <hr>
+
+  <label><input type="radio" name="type" value="program"> Program</label>
+  <label><input type="radio" name="type" value="yearLevel"> Year Level</label>
+
+  <label><input type="checkbox" name="terms"> I accept the <a href="#">terms and conditions</a></label>
+
+  <p class="privacy-note">
+    The school ensures data protection by adhering to relevant privacy laws, applying encryption,
+    and requiring informed consent before any external sharing.
+  </p>
+
+  <hr>
+
+  <label>Upload a profile picture:</label>
+  <input type="file" name="profilePic">
+
+  <label>Birthdate:</label>
+  <input type="date" name="birthdate">
+
+  <label>Specialization:</label>
+  <select name="specialization">
+    <option value="">(select one)</option>
+    <option value="IT">IT</option>
+    <option value="Business">Business</option>
+    <option value="Engineering">Engineering</option>
+  </select>
+
+  <label>Bio:</label>
+  <textarea name="bio" rows="3" placeholder="I like coding on the beach..."></textarea>
+
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
